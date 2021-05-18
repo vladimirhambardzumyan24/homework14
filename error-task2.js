@@ -1,9 +1,9 @@
 function isPositive(a) {
   if (a > 0) {
-    throw "YES";
+    return "YES";
   } else if (a < 0) {
     throw new Error("Negative Error.");
   }
   throw new Error("Zero Error.");
 }
-isPositive(23);
+console.log(isPositive(23));
